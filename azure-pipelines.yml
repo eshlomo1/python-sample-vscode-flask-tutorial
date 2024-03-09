@@ -41,6 +41,5 @@ steps:
 
 - task: AdvancedSecurity-Codeql-Init@1
 
-- task: AdvancedSecurity-Dependency-Scanning@1
-
-- task: AdvancedSecurity-Codeql-Analyze@1 
+- task: AdvancedSecurity-Dependency-Scanning@1 #dependency scanning
+ 
