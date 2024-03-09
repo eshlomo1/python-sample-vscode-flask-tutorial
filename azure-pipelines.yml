@@ -35,6 +35,8 @@ steps:
     pytest
   displayName: 'pytest'
 
-- task: AdvancedSecurity-Dependency-Scanning@1
-
-- task: AdvancedSecurity-Publish@1
+- task: AdvancedSecurity-Codeql-Autobuild@1
+  displayName: AutoBuild
+ 
+- task: AdvancedSecurity-Codeql-Analyze@1
+  displayName: Perform CodeQL Analysis
