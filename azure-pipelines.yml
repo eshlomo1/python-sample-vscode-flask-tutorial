@@ -20,9 +20,9 @@ steps:
   inputs:
     addToPath: true 
     architecture: 'x64' # 'x86' | 'x64'. Required. Architecture. Default: x64.
-    #versionSpec: '$(python.version)'
+    versionSpec: '$(python.version)'
     disableDownloadFromRegistry: false 
-    versionSpec: '3.x' # string. Required. Version spec. Default: 3.x.
+    #versionSpec: '3.x' # string. Required. Version spec. Default: 3.x.
   displayName: 'Use Python $(python.version)'
 
 - bash:   |
