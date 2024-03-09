@@ -38,3 +38,12 @@ steps:
  
 - task: AdvancedSecurity-Codeql-Analyze@1
   displayName: Perform CodeQL Analysis
+
+- task: AdvancedSecurity-Codeql-Init@1
+#- task: ms.advancedsecurity-tasks.codeql.init.AdvancedSecurity-Codeql-Init@1
+
+#- task: ms.advancedsecurity-tasks.codeql.analyze.AdvancedSecurity-Codeql-Analyze@1
+
+- task: AdvancedSecurity-Dependency-Scanning@1
+
+- task: AdvancedSecurity-Codeql-Analyze@1 
