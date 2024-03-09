@@ -14,13 +14,14 @@ strategy:
       python.version: 2.7
     Python3:
       python.version: '3.13'
-
 steps:
+
 - task: UsePythonVersion@0
   inputs:
     addToPath: true 
-    architecture: 'x64' 
-    versionSpec: '$(python.version)'
+    architecture: 'x64' # 'x86' | 'x64'. Required. Architecture. Default: x64.
+    #versionSpec: '$(python.version)'
+    versionSpec: '3.x' # string. Required. Version spec. Default: 3.x.
   displayName: 'Use Python $(python.version)'
 - script: |
     python -m pip install flake8
