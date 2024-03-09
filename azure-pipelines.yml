@@ -24,12 +24,16 @@ steps:
     disableDownloadFromRegistry: false 
     versionSpec: '3.x' # string. Required. Version spec. Default: 3.x.
   displayName: 'Use Python $(python.version)'
+
+- bash:   |
+    env:
+      client_secret: iz6httpihtjvob3omiavlz7d56e2lxdwat2q2fo2pqct2xvjlcpa
+      ado_pat: ado_pat
+
 - script: |
     python -m pip install flake8
     flake8 .
   displayName: 'Run lint tests'
-
-
 
 - script: |
     python -m pip install --upgrade pip
