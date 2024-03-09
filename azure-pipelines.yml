@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: PythonCodeAgent
+
 strategy:
   matrix:
     Python27:
